@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 
-lyrics = [
+lyrics = [ 
     "tingnan natin nang husto",
     "pagmasdan mo nang maigi",
     "ang makulay kong mundo",
@@ -73,8 +73,9 @@ while cap.isOpened():
 
     cv2.imshow("trip trip lang", frame)
 
-    if cv2.waitKey(1) & 0xFF == 27:  # Esc to exit
+    if cv2.waitKey(1) & 0xFF == 27: 
         break
 
 cap.release()
 cv2.destroyAllWindows()
+
